@@ -1,4 +1,4 @@
-import { MonsterDisplayProps } from '../components/types.ts'
+import { MonsterDisplayProps } from './types';
 
 export function MonsterDisplay({ monster, isAttacked }: MonsterDisplayProps) {
   const [emoji, ...nameParts] = monster.split(' ')

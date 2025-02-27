@@ -1,4 +1,4 @@
-import { AchievementPopupProps } from '../components/types.ts'
+import { AchievementPopupProps } from './types';
 
 export function AchievementPopup({ achievement }: AchievementPopupProps) {
   return (

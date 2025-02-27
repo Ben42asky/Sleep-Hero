@@ -1,4 +1,4 @@
-import { ActionButtonProps } from '../components/types.ts'
+import { ActionButtonProps } from './types';
 import { Button } from './Button'
 
 export function ActionButton({ action, onClick, disabled }: ActionButtonProps) {
@@ -11,7 +11,7 @@ export function ActionButton({ action, onClick, disabled }: ActionButtonProps) {
 
   return (
     <Button
-      onClick={() => onClick(action.action)}
+      onClick={() => onClick(action)}
       disabled={disabled}
       variant={getVariant()}
       className="w-full text-lg py-4 relative group transition-all duration-300 transform hover:scale-[1.02]"

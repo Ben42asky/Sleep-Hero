@@ -150,4 +150,6 @@ export function AppInfo() {
       </div>
     </div>
   )
-}
+// Removed unused functions and parameters
+  // ...existing code...
+};
