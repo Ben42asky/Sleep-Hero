@@ -3,6 +3,7 @@ import { ACHIEVEMENTS } from '../data/achievements'
 import { Info, Medal, Trophy, Timer, Target, Star } from 'lucide-react'
 import { Button } from './Button'
 import { useNavigate } from 'react-router-dom'
+import { Key, ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from 'react'
 
 export function AppInfo() {
   const navigate = useNavigate()
@@ -61,7 +62,7 @@ export function AppInfo() {
             <div>
               <div className="text-sm text-gray-600">Achievements</div>
               <div className="text-xl font-bold text-blue-600">
-                {achievements.filter(a => a.unlocked).length}/{achievements.length}
+                {achievements.filter((a: { unlocked: any }) => a.unlocked).length}/{achievements.length}
               </div>
             </div>
           </div>
@@ -105,7 +106,7 @@ export function AppInfo() {
             Achievements
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {achievements.map((achievement) => (
+            {achievements.map((achievement: { id: Key | null | undefined; unlocked: any; icon: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; title: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined; description: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | null | undefined }) => (
               <div 
                 key={achievement.id}
                 className={`p-4 rounded-xl border-2 ${

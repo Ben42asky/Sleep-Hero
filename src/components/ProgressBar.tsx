@@ -1,4 +1,4 @@
-import { ProgressBarProps } from './types'
+import { ProgressBarProps } from '../components/types.ts'
 
 export function ProgressBar({ value, max, label, color }: ProgressBarProps) {
   const percentage = Math.max(0, Math.min(100, (value / max) * 100))

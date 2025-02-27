@@ -31,9 +31,53 @@ export interface Achievement {
   unlocked: boolean
 }
 
+export interface ScoreDisplayProps {
+  points: number;
+  totalPoints: number;
+}
+
 export interface Stats {
   actionsUsed: { [key: string]: number }
   monstersDefeated: number
   totalProgress: number
   highScore: number
+}
+
+// Add the necessary imports and types here if needed
+
+export interface ProgressBarProps {
+  value: number;
+  max: number;
+  label: string;
+  color: string;
+}
+
+// Ensure this file contains the following export
+
+export interface MonsterDisplayProps {
+  monster: string;
+  isAttacked: boolean;
+}
+
+export interface SomeOtherInterface {
+  // other properties
+}
+
+export interface AchievementPopupProps {
+  achievement: {
+    icon: React.ReactNode;
+    title: string;
+  };
+}
+
+// Add your existing code here
+
+export interface ActionButtonProps {
+  action: {
+    action: string;
+    label: string;
+    used: boolean;
+  };
+  onClick: (action: string) => void;
+  disabled: boolean;
 }

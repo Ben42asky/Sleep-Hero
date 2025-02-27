@@ -9,7 +9,6 @@ export function Victory() {
   const navigate = useNavigate()
   const [showPointsPopup, setShowPointsPopup] = useState(true)
   const gameState = JSON.parse(localStorage.getItem('gameState') || '{}')
-  const currentChallenge = CHALLENGES[gameState.challengeNumber || 0]
   const isGameComplete = (gameState.challengeNumber || 0) >= CHALLENGES.length - 1
 
   useEffect(() => {

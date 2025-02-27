@@ -1,4 +1,4 @@
-import { Action } from '../types'
+import { Action } from './types'
 import { ActionButton } from './ActionButton'
 
 interface ActionContainerProps {

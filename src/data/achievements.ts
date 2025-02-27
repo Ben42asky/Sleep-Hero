@@ -1,4 +1,4 @@
-import { Achievement } from '../types'
+import { Achievement } from '../components/types'
 
 export const ACHIEVEMENTS: Achievement[] = [
   {

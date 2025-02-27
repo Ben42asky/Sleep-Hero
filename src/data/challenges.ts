@@ -1,4 +1,4 @@
-import { Challenge } from '../types'
+import { Challenge } from '../components/types'
 
 export const CHALLENGES: Challenge[] = [
   {

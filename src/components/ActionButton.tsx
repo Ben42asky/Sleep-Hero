@@ -1,4 +1,4 @@
-import { ActionButtonProps } from './types'
+import { ActionButtonProps } from '../components/types.ts'
 import { Button } from './Button'
 
 export function ActionButton({ action, onClick, disabled }: ActionButtonProps) {

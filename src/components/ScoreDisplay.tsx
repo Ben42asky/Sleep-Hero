@@ -1,5 +1,4 @@
-import { ScoreDisplayProps } from './types'
-
+import { ScoreDisplayProps } from '../components/types.ts'
 export function ScoreDisplay({ points, totalPoints }: ScoreDisplayProps) {
   return (
     <div className="flex gap-4 justify-center">
