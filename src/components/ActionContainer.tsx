@@ -3,7 +3,7 @@ import { ActionButton } from './ActionButton'
 
 interface ActionContainerProps {
   actions: Action[]
-  onAction: (actionId: string) => void
+  onAction: (action: Action) => void
   disabled?: boolean
 }
 
@@ -16,9 +16,9 @@ export function ActionContainer({ actions, onAction, disabled }: ActionContainer
       <div className="space-y-3">
         {actions.map((action) => (
           <ActionButton
-            key={action.action}
+            key={String(action.action)}
             action={action}
-            onClick={onAction}
+            onClick={() => onAction(action)}
             disabled={disabled || (action.used && action.sleepEffect > 0)}
           />
         ))}

@@ -15,7 +15,7 @@ export interface Action {
   id: string;
   name: string;
   execute: () => void;
-  used: boolean;
+  used: boolean; // Ensure this is always a boolean
   label: string;
 }
 
