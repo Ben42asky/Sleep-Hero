@@ -1,106 +1,36 @@
-# Sleep Hero - Setup Instructions
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Prerequisites Installation
+## Getting Started
 
-1. **Install Node.js**
-   - Go to https://nodejs.org
-   - Download and install the "LTS" (Long Term Support) version
-   - Follow the installation wizard's default settings
-   - To verify installation:
-     - Open Terminal/Command Prompt
-     - Type `node --version`
-     - If you see a version number, installation was successful
+First, run the development server:
 
-## Project Setup
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-1. **Create Project Folder**
-   - Open VS Code
-   - Go to File → Open Folder
-   - Create a new folder named "sleep-hero" anywhere on your computer
-   - Select this folder to open it
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2. **Copy Project Files**
-   - Copy all the project files into your "sleep-hero" folder
-   - Make sure the folder structure matches:
-     ```
-     sleep-hero/
-     ├── src/
-     │   ├── components/
-     │   ├── data/
-     │   ├── screens/
-     │   ├── types/
-     │   ├── App.tsx
-     │   ├── main.tsx
-     │   └── ...
-     ├── index.html
-     ├── package.json
-     ├── tsconfig.json
-     └── ...
-     ```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Installing Dependencies
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. **Open Terminal in VS Code**
-   - Go to Terminal → New Terminal in VS Code's top menu
-   - A terminal will open at the bottom of your window
+## Learn More
 
-2. **Install Dependencies**
-   - In the terminal, type exactly:
-     ```bash
-     npm install
-     ```
-   - Press Enter and wait for installation to complete
-   - You'll see a progress bar and some text output
-   - Installation is complete when you see no more activity and can type again
+To learn more about Next.js, take a look at the following resources:
 
-## Running the App
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. **Start Development Server**
-   - In the terminal, type:
-     ```bash
-     npm run dev
-     ```
-   - Press Enter
-   - Wait for the server to start
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-2. **Open the App**
-   - Look for a message in the terminal that says something like:
-     ```
-     Local:   http://localhost:5173/
-     ```
-   - Hold Ctrl (or Cmd on Mac) and click that link
-   - Or open your web browser and go to: http://localhost:5173
+## Deploy on Vercel
 
-## Troubleshooting
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-If you encounter any issues:
-
-1. **Dependencies Error**
-   - Try deleting the "node_modules" folder and "package-lock.json" file
-   - Run `npm install` again
-
-2. **Port Already in Use**
-   - Close other running applications
-   - Or try using a different port by running:
-     ```bash
-     npm run dev -- --port 3000
-     ```
-
-3. **Compilation Errors**
-   - Make sure all files are in their correct locations
-   - Verify no files were modified during copying
-
-4. **Nothing Happens on Run**
-   - Make sure you're in the correct folder in the terminal
-   - The terminal should show "sleep-hero" in its path
-   - If not, use `cd` command to navigate to your project folder
-
-## Need Help?
-
-If you're still having issues:
-1. Read any error messages in the terminal carefully
-2. Make sure Node.js is properly installed
-3. Verify all files are in their correct locations
-4. Try closing VS Code and reopening it
-
-Remember: The application needs to keep running to work. Don't close the terminal window while using the app.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
